@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coke For Everyone</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #e60012;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.5),
+                        rgba(0,0,0,0.5)),
+                        url('https://images.unsplash.com/photo-1622483767028-3f66f32f6f5b?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #e60012;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .products {
+            padding: 80px 50px;
+            text-align: center;
+            background: white;
+        }
+
+        .products h2 {
+            margin-bottom: 40px;
+            color: #e60012;
+            font-size: 40px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #fafafa;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            margin: 15px 0;
+            color: #e60012;
+        }
+
+        .about {
+            padding: 80px 50px;
+            background: #f7f7f7;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #e60012;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Coke For Everyone</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Refresh Your Day</h1>
+            <p>Enjoy the taste of happiness with Coke For Everyone.</p>
+            <a href="#" class="btn">Explore Drinks</a>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Our Popular Drinks</h2>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Classic Coke">
+                <h3>Classic Coke</h3>
+                <p>The original refreshing cola experience.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Cherry Coke">
+                <h3>Cherry Coke</h3>
+                <p>A sweet and fruity twist on a classic favorite.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Diet Coke">
+                <h3>Diet Coke</h3>
+                <p>Great taste with fewer calories.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>
+            Coke For Everyone is dedicated to delivering refreshing beverages
+            that bring people together. Our mission is simple: create moments
+            of happiness, one bottle at a time.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Coke For Everyone. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
